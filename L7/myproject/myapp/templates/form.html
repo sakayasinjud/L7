@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Page</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #dcd6d6;
+        }
+
+        .container{
+            background-color: #f2f2f2;
+            width: 400px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        h1{
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        label{
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        input:focus{
+            outline: none;
+            border-color: #2ea043;
+        }
+
+        button{
+            width: 100%;
+            padding: 12px;
+            background-color: #2ea043;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover{
+            background-color: #248a37;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>แบบฟอร์มบันทึกข้อมูล</h1>
+
+        <form>
+            <label>ชื่อ</label>
+            <input type="text">
+
+            <label>นามสกุล</label>
+            <input type="text">
+
+            <button type="submit">บันทึก</button>
+        </form>
+    </div>
+
+</body>
+</html>
